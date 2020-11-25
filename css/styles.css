@@ -333,16 +333,17 @@ p {
   margin-top: 50px;
 }
 
-#services .service-item {
-  flex-basis: 80%;
-  height:375px;
-  width: 25vw;
-  display: flex;
-  align-items: flex-start;
-  /*justify-content: center;*/
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 0px;
+
+  #services .service-item {
+	flex-basis:80%;
+	display: flex;
+    height:350px;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding:30px;
+	border-radius: 10px;
+ 
   background-image: url(../img/bg-1.jpg);
   background-size: cover;
   background-position: center;
