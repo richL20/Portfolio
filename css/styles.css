@@ -335,8 +335,8 @@ p {
 
 #services .service-item {
   flex-basis: 80%;
-  height: 375px;
-  width: 450px;
+  height:40vh;
+  width: 25vw;
   display: flex;
   align-items: flex-start;
   /*justify-content: center;*/
@@ -524,7 +524,7 @@ p {
 
 #about .about {
   flex-direction: column-reverse;
-  text-align: center;
+  text-align:left;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
