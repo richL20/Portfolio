@@ -1,5 +1,3 @@
-
-
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +7,6 @@
 html {
   font-size: 10px;
   font-family: 'Montserrat', sans-serif;
-  scroll-behavior: smooth;
 }
 
 a {
@@ -42,7 +39,7 @@ p {
 
 .section-title {
   font-size: 4rem;
-  font-weight:500;
+  font-weight: 500;
   color: black;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -237,7 +234,7 @@ p {
   background-size: cover;
   background-position: top center;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 #hero::after {
@@ -262,19 +259,19 @@ p {
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size:3.0rem;
-  font-weight:500;
+  font-size: 3.5rem;
+  font-weight: 500;
   position: relative;
   color: transparent;
   animation: text_reveal .5s ease forwards;
   animation-delay: 1s;
-  letter-spacing:5px;
- 
+  letter-spacing: 5px;
+
 }
 
 #hero h1:nth-child(1) {
   animation-delay: 1s;
-  
+
 }
 
 #hero h1:nth-child(2) {
@@ -334,16 +331,16 @@ p {
 }
 
 
-  #services .service-item {
-	flex-basis:80%;
-	display: flex;
-    height:350px;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding:30px;
-	border-radius: 10px;
- 
+#services .service-item {
+  flex-basis: 80%;
+  display: flex;
+  height: 350px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+
   background-image: url(../img/bg-1.jpg);
   background-size: cover;
   background-position: center;
@@ -525,11 +522,11 @@ p {
 
 #about .about {
   flex-direction: column-reverse;
-  text-align:left;
+  text-align: left;
   max-width: 1200px;
   margin: 0 auto;
   padding: 100px 20px;
-  color:#2a2a2a;
+  color: #2a2a2a;
 }
 
 #about .col-left {
@@ -543,16 +540,16 @@ p {
 
 #about .col-right h2 {
   font-size: 2.5rem;
-  font-weight:200;
+  font-weight: 200;
   letter-spacing: .2rem;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
 #about .col-right p {
   margin-bottom: 20px;
-  font-size:2.0rem;
-  color:#2a2a2a;
+  font-size: 2.0rem;
+  color: #2a2a2a;
 }
 
 #about .col-right .cta {
@@ -634,6 +631,28 @@ p {
   font-weight: 500;
 }
 
+.up {
+  text-align: right;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  font-size: 2rem;
+}
+
+.up img {
+  width: 40px;
+  height: 40px;
+  background-color: darkgrey;
+  padding: 5px;
+  border-radius: 5px;
+  position: sticky;
+}
+
+.up img:hover {
+  background-color: crimson;
+  opacity: .5;
+  transition-duration: .6s;
+}
+
 /*End contact Section */
 
 /* Footer */
@@ -683,46 +702,43 @@ p {
 }
 
 /* End Footer */
+/* Keyframe Animation */
+  @keyframes hamburger_puls {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
 
-/* Keyframes */
-@keyframes hamburger_puls {
-  0% {
-    opacity: 1;
-    transform: scale(1);
+    100% {
+      opacity: 0;
+      transform: scale(1.4);
+    }
   }
 
-  100% {
-    opacity: 0;
-    transform: scale(1.4);
+  @keyframes text_reveal_box {
+    50% {
+      width: 100%;
+      left: 0;
+    }
+
+    100% {
+      width: 0;
+      left: 100%;
+    }
   }
+
+  @keyframes text_reveal {
+    100% {
+      color: white;
+    }
+  }
+
+  @keyframes text_reveal_name {
+    100% {
+      color: crimson;
+      font-weight: 200;
+    }
 }
-
-@keyframes text_reveal_box {
-  50% {
-    width: 100%;
-    left: 0;
-  }
-
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-
-@keyframes text_reveal {
-  100% {
-    color: white;
-  }
-}
-
-@keyframes text_reveal_name {
-  100% {
-    color: crimson;
-    font-weight:200;
-  }
-}
-
-/* End Keyframes */
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -738,7 +754,7 @@ p {
 
   /* Hero */
   #hero h1 {
-    font-size:6rem;
+    font-size:5.5rem;
   }
 
   /* End Hero */
@@ -790,9 +806,11 @@ p {
   #about .about {
     flex-direction: row;
   }
-  #about h2{
-    font-size:3.75rem;
+
+  #about h2 {
+    font-size: 3.75rem;
   }
+
   #about .col-left {
     width: 600px;
     height: 400px;
@@ -856,45 +874,50 @@ p {
     padding-left: 20px;
   }
 
+
   /* End contact  */
-}
 
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
 
-  /* header */
-  #header .hamburger {
-    display: none;
+  /* End Media Query For Tablet */
+
+  /* Media Query For Desktop */
+  @media only screen and (min-width: 1200px) {
+
+    /* header */
+    #header .hamburger {
+      display: none;
+    }
+
+    #header .nav-list ul {
+      position: initial;
+      display: block;
+      height: auto;
+      width: fit-content;
+      background-color: transparent;
+    }
+
+    #header .nav-list ul li {
+      display: inline-block;
+    }
+
+    #header .nav-list ul li a {
+      font-size: 1.75rem;
+    }
+
+    #header .nav-list ul a:after {
+      display: none;
+    }
+
+    /* End header */
+
+    #services .service-bottom .service-item {
+      flex-basis: 23%;
+      margin: 1.0%;
+    }
   }
 
-  #header .nav-list ul {
-    position: initial;
-    display: block;
-    height: auto;
-    width: fit-content;
-    background-color: transparent;
-  }
 
-  #header .nav-list ul li {
-    display: inline-block;
-  }
+  /* End  Media Query For Desktop */
 
-  #header .nav-list ul li a {
-    font-size: 1.75rem;
-  }
-
-  #header .nav-list ul a:after {
-    display: none;
-  }
-
-  /* End header */
-
-  #services .service-bottom .service-item {
-    flex-basis: 23%;
-    margin: 1.0%;
-  }
-}
-
-/* End  Media Query For Desktop */
+  
