@@ -335,7 +335,7 @@ p {
 
 #services .service-item {
   flex-basis: 80%;
-  height:40vh;
+  height:50vh;
   width: 25vw;
   display: flex;
   align-items: flex-start;
