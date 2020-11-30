@@ -259,7 +259,7 @@ p {
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size: 3.5rem;
+  font-size:3.0rem;
   font-weight: 500;
   position: relative;
   color: transparent;
@@ -497,7 +497,7 @@ p {
   background-color: black;
 }
 
-#projects .project-img:after {
+#projects img:after {
   content: '';
   position: absolute;
   left: 0;
@@ -509,12 +509,6 @@ p {
 }
 
 
-
-#projects .project-item:hover .project-img img {
-  opacity: .5;
-  transition-duration: .8s;
-
-}
 
 /* End Projects section */
 
