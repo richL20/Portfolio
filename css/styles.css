@@ -259,13 +259,13 @@ p {
 #hero h1 {
   display: block;
   width: fit-content;
-  font-size:3.0rem;
+  font-size:3.50rem;
   font-weight: 500;
   position: relative;
   color: transparent;
   animation: text_reveal .5s ease forwards;
   animation-delay: 1s;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 
 }
 
@@ -335,6 +335,7 @@ p {
   flex-basis: 80%;
   display: flex;
   height: 350px;
+  
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
@@ -364,6 +365,7 @@ p {
 }
 
 #services .service-bottom .icon {
+ 
   height: 100px;
   width: 100px;
   margin-bottom: 30px;
@@ -780,7 +782,8 @@ p {
   }
 
   #projects .project-item {
-    height: 400px;
+    height:350px;
+    width:100%;
     margin: 0;
     width: 100%;
     border-radius: 0;
